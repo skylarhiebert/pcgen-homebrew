@@ -1,0 +1,30 @@
+# CVS $Revision: 17772 $ $Author: amaitland $ -- Sat Oct 13 01:30:35 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Revised (v.3.5) System Reference Document	SOURCESHORT:RSRD	SOURCEWEB:http://www.wizards.com/default.asp?x=d20/article/srd35	SOURCEDATE:2000-01
+
+#Light
+# Armor Name
+Padded
+Leather
+Studded Leather
+Chain Shirt
+
+#Medium
+Hide
+Scale Mail
+Chainmail
+Breastplate
+
+#Heavy
+Splint Mail
+Banded Mail
+Half-Plate
+Full Plate
+
+# Barding
+Barding (Light)
+Barding (Medium)
+Barding (Heavy)
+
+#
+# End
+#

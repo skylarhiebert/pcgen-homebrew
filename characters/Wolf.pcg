@@ -1,0 +1,155 @@
+PCGVERSION:2.0
+
+# System Information
+CAMPAIGN:SRD 3.5 for Players|CAMPAIGN:3.5 RSRD Advanced|CAMPAIGN:3.5 RSRD Divine|CAMPAIGN:3.5 RSRD Epic|CAMPAIGN:Skylar's Campaign
+VERSION:6.00.0
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
+CHARACTERTYPE:PC
+POOLPOINTS:0
+POOLPOINTSAVAIL:-1
+GAMEMODE:35e
+TABLABEL:0
+AUTOSPELLS:Y
+USEHIGHERKNOWN:N
+USEHIGHERPREPPED:N
+LOADCOMPANIONS:N
+USETEMPMODS:Y
+AUTOSORTGEAR:Y
+SKILLSOUTPUTORDER:0
+IGNORECOST:N
+ALLOWDEBT:N
+AUTORESIZEGEAR:Y
+
+# Character Bio
+CHARACTERNAME:Wolf
+TABNAME:
+PLAYERNAME:
+HEIGHT:0
+WEIGHT:0
+AGE:0
+GENDER:Male
+HANDED:Right
+SKINCOLOR:
+EYECOLOR:
+HAIRCOLOR:
+HAIRSTYLE:
+LOCATION:
+CITY:
+BIRTHDAY:
+BIRTHPLACE:
+PERSONALITYTRAIT1:
+PERSONALITYTRAIT2:
+SPEECHPATTERN:
+PHOBIAS:
+INTERESTS:
+CATCHPHRASE:
+PORTRAIT:
+
+# Character Attributes
+STAT:STR|SCORE:13
+STAT:DEX|SCORE:15
+STAT:CON|SCORE:15
+STAT:INT|SCORE:2
+STAT:WIS|SCORE:12
+STAT:CHA|SCORE:6
+ALIGN:TN
+RACE:Animal Companion ~ Wolf
+
+# Character Class(es)
+CLASS:Animal|LEVEL:2|SKILLPOOL:0
+CLASSABILITIESLEVEL:Animal=1|HITPOINTS:8|SKILLSGAINED:4|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Animal=2|HITPOINTS:7|PRESTAT:STR=13|PRESTAT:DEX=15|PRESTAT:CON=15|PRESTAT:INT=2|PRESTAT:WIS=12|PRESTAT:CHA=6|SKILLSGAINED:1|SKILLSREMAINING:0
+
+# Character Experience
+EXPERIENCE:0
+EXPERIENCETABLE:Default
+
+# Character Templates
+
+# Character Region
+REGION:None
+
+# Character Skills
+SKILL:Appraise|OUTPUTORDER:1|
+SKILL:Balance|OUTPUTORDER:2|
+SKILL:Bluff|OUTPUTORDER:3|
+SKILL:Climb|OUTPUTORDER:4|
+SKILL:Concentration|OUTPUTORDER:5|
+SKILL:Craft (Untrained)|OUTPUTORDER:6|
+SKILL:Diplomacy|OUTPUTORDER:7|
+SKILL:Disguise|OUTPUTORDER:8|
+SKILL:Escape Artist|OUTPUTORDER:9|
+SKILL:Forgery|OUTPUTORDER:10|
+SKILL:Gather Information|OUTPUTORDER:11|
+SKILL:Heal|OUTPUTORDER:12|
+SKILL:Hide|OUTPUTORDER:13|CLASSBOUGHT:[CLASS:Animal|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Intimidate|OUTPUTORDER:14|
+SKILL:Jump|OUTPUTORDER:15|
+SKILL:Listen|OUTPUTORDER:16|CLASSBOUGHT:[CLASS:Animal|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Move Silently|OUTPUTORDER:17|CLASSBOUGHT:[CLASS:Animal|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Ride|OUTPUTORDER:18|
+SKILL:Search|OUTPUTORDER:19|
+SKILL:Sense Motive|OUTPUTORDER:20|
+SKILL:Spot|OUTPUTORDER:21|
+SKILL:Survival|OUTPUTORDER:22|
+SKILL:Swim|OUTPUTORDER:23|
+SKILL:Use Rope|OUTPUTORDER:24|
+
+# Character Languages
+
+
+# Character Feats
+FEATPOOL:-1.0
+
+# Character Abilities
+ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Defend|TYPE:AnimalTrick.AnimalTrickDefend|DESC:The animal defends you (or is ready to defend you if no threat is present), even without any command being given. Alternatively, you can command the animal to defend another specific character.
+ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Down|TYPE:AnimalTrick.AnimalTrickDown|DESC:The animal breaks off from combat or otherwise backs down. An animal that doesn't know this trick continues to fight until it must f lee (due to injury, a fear effect, or the like) or its opponent is defeated.
+ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Attack|TYPE:AnimalTrick.AnimalTrickAttack|DESC:The animal attacks apparent enemies.|DESC:Animal will attack all creatures&pipe;PREABILITY&colon;1,CATEGORY=Animal Trick,Animal Trick ~ Attack II
+ABILITY:Animal Trick|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Animal Trick ~ Track|TYPE:AnimalTrick.AnimalTrickTrack|DESC:The animal tracks the scent presented to it. (This requires the animal to have the scent ability.)
+USERPOOL:Animal Trick|POOLPOINTS:0.0
+ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Weapon Focus|APPLIEDTO:Bite|TYPE:General.Fighter|DESC:You gain a +1 bonus on all attack rolls you make using the selected weapon.
+USERPOOL:FEAT|POOLPOINTS:0.0
+ABILITY:*LANGBONUS|TYPE:VIRTUAL|CATEGORY:*LANGBONUS|KEY:*LANGBONUS|APPLIEDTO:|TYPE:
+USERPOOL:*LANGBONUS|POOLPOINTS:0.0
+
+# Character Weapon proficiencies
+WEAPONPROF:[WEAPON:Bite]
+
+# Character Equipment
+MONEY:0
+EQUIPSET:Default Set|ID:0.1|USETEMPMODS:Y
+CALCEQUIPSET:0.1
+
+# Temporary Bonuses
+
+# EquipSet Temp Bonuses
+
+# Character Deity/Domain
+
+# Character Spells Information
+
+# Character Description/Bio/History
+CHARACTERBIO:
+CHARACTERDESC:
+CHARACTERCOMP:
+CHARACTERASSET:
+CHARACTERMAGIC:
+CHARACTERDMNOTES:
+
+# Kits
+
+# Character Master/Follower
+MASTER:Aiven Green|TYPE:Animal Companion|HITDICE:0|FILE:Aiven Green.pcg|ADJUSTMENT:0
+
+# Character Notes Tab
+NOTE:Character Sheet Notes|ID:1|PARENTID:-1|VALUE:
+
+# Age Set Selections
+AGESET:0:0:0:0:0:0:0:0:0:0
+
+# Campaign History
+
+# Suppressed Biography Fields
+SUPPRESSBIOFIELDS:
+

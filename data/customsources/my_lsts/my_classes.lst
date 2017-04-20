@@ -1,0 +1,169 @@
+# CVS $Revision: 4667 $ $Author: jfrazierjr $ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Class File tags" to find
+#out how the tags in the classes file work. Some of the tags used here are global tags. You will see an alphabetical
+#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+#
+#
+#
+#####Example
+
+#CLASS:Rogue		HD:6		TYPE:Base.PC	ABB:Rog	MAXLEVEL:20	SOURCEPAGE:ClassesII.rtf	LANGAUTO:Literacy		BONUS:CHECKS|BASE.Reflex|CL/2+2	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=Base.REPLACE
+#CLASS:Rogue		STARTSKILLPTS:8	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
+#1	AUTO:FEAT|Simple Weapon Proficiency|Rogue Weapon Proficiencies|All Automatic Proficiencies
+#1	AUTO:FEAT|Armor Proficiency (Light)
+#1	BONUS:VAR|SneakAttack|(CL+1)/2	AUTO:FEAT|Sneak Attack
+#1	SAB:Trapfinding
+#2																												AUTO:FEAT|Evasion
+#3				BONUS:VAR|TrapSense|CL/3																				AUTO:FEAT|Trap Sense Ability
+#4				BONUS:VAR|UncannyDodgeFlankingLevel|CL|TYPE=EachClass.REPLACE	ADD:FEAT|1|Uncanny Dodge,Improved Uncanny Dodge
+#8															ADD:FEAT|1|Uncanny Dodge,Improved Uncanny Dodge
+#10															ADD:FEAT|1|TYPE=RogueAbilities,TYPE=General,TYPE=Metamagic,TYPE=ItemCreation
+#13															ADD:FEAT|1|TYPE=RogueAbilities,TYPE=General,TYPE=Metamagic,TYPE=ItemCreation
+#16															ADD:FEAT|1|TYPE=RogueAbilities,TYPE=General,TYPE=Metamagic,TYPE=ItemCreation
+#19															ADD:FEAT|1|TYPE=RogueAbilities,TYPE=General,TYPE=Metamagic,TYPE=ItemCreation
+
+#####
+#Class files are where each class is listed, given it's important information for the correct output and functioning of the
+#class. Each class has 2 components to it: The main class line and the class level line. The class line begins with CLASS
+#and the class level line begins with a level # (0, 1, 2, etc).
+#
+#The CLASS tag tells PCGen the class name and sets up the relationships with skills and spells. This line can be entered
+#multiple times in a single class entry (appearing on separate lines) for purposes of making the lines easier to read in an
+#editor (so as to not have to scroll forever to reach the end of the class line). THIS MUST BE THE FIRST TAG!!!
+#
+#The HD tag sets the Hit Die used to determine hit points at each level gained.
+#
+#The TYPE tag is used within the filters of PCGen to sort the classes by their respective types (makes it easier to find a
+#specific class).
+#
+#The ABB tag can be used to hold a 3-5 letter abbreviation of the class name.
+#
+#The MAXLEVEL tag sets the maximum number of levels of the class you can add to a character. You can use MAXLEVEL:NOLIMIT in addition to a number. 
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the class. This will be displayed in PCGen.
+#
+#The LANGAUTO tag is holding a list of languages that the character automatically gains.
+#
+#The BONUS tags are a group of similar tags, that grant some form of Bonus to another already existing tag. To read a description
+#of them, look in the List File Tag Index under the topic "Bonus tags".
+#
+#The STARTSKILLPTS tag determines how many skill points a character gains per level.
+#
+#The CSKILL tag grants the listed skills as class skills. When used in a classes.lst, it grants the class skills only to the
+#class it is actually in.
+#
+#The FEATAUTO tag holds a list of feats that the class automatically gets.
+#
+#The SA tag is holding a text that will be displayed as Special Ability on the output sheet.
+#
+#The ADD:FEAT tag will give the character a choice of one from the feats listed in the parentheses. If the feat being added
+#has a chooser ADD:FEAT is the only tag which will activate it (VFEAT, MFEAT and FEATAUTO will not). Besides of ADD:FEAT, there
+#is a multitude of ADD tags in PCGen. You can look them up in the List File Tag Index under the topic "ADD Tags".
+
+SOURCELONG:Custom	SOURCESHORT:Custom
+
+CLASS:Dragon Shaman (Silver)	OUTPUTNAME:Dragon Shaman	TYPE:BASE.PC.CUSTOM.DSSilver	ABB:DrShm	HD:10	MAXLEVEL:20	MEMORIZE:Y	LANGAUTO:Draconic	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=BASE.REPLACE
+# Class Name, Alignment Requirements
+CLASS:Dragon Shaman (Silver)	PREALIGN:NG,LG,LN
+# Class Name, Skill Pts/LVL Class Skills
+CLASS:Dragon Shaman (Silver)	STARTSKILLPTS:2		CSKILL:Bluff|TYPE.Craft|Disguise|Intimidate|Jump|Knowledge (Nature)|Search
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
+1	AUTO:FEAT|Simple Weapon Proficiency
+1	AUTO:FEAT|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1	AUTO:FEAT|Shield Proficiency
+# Dragon Shaman Draconic Aura Variables
+#	DRACONICAURABASE	The Level of Draconic Aura (1/5 Levels + 1)
+#	DRACONICAURASKNOWN	The number of Auras known at any one time
+#	DRACONICBREATHDC	The DC of Breath Weapon
+#	DRACONICBREATHDMG	The Damage Dice of Breath Weapon
+#	DRACONICBREATHRANGE	The Range of the Breath Weapon
+#	DRAGONSHAMANLVL		The Level of Dragon Shaman for Draconic Adaptation
+#	TOUCHOFVITALITYLVL	Level Modifer for Touch of Vitality (Su)
+### Dragon Shaman Variables
+1	DEFINE:DRAGONSHAMANLVL|0
+1	BONUS:VAR|DRAGONSHAMANLVL,TOUCHOFVITALITYLVL|CL
+1	BONUS:VAR|DRACONICAURABASE|DRAGONSHAMANLVL/5+1
+###Block:Level Progression
+1	AUTO:FEAT|Draconic Aura
+2	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+3	AUTO:FEAT|Draconic Adaptation	
+4	AUTO:FEAT|Draconic Breath Weapon|Draconic Resolve
+6	AUTO:FEAT|Touch of Vitality
+7	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+8	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+9	AUTO:FEAT|Draconic Energy Immunity
+12	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+14	AUTO:FEAT|Commune with Dragon Spirit
+16	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+17	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+19	AUTO:FEAT|Draconic Wings
+
+CLASS:Dragon Shaman (Gold)	OUTPUTNAME:Dragon Shaman	TYPE:BASE.PC.CUSTOM.DSGold	ABB:DrShm	HD:10	MAXLEVEL:20	MEMORIZE:Y	LANGAUTO:Draconic	BONUS:CHECKS|BASE.Fortitude,BASE.Will|CL/2+2	BONUS:CHECKS|BASE.Reflex|CL/3	BONUS:COMBAT|BAB|CL*3/4|TYPE=BASE.REPLACE
+# Class Name, Alignment Requirements
+CLASS:Dragon Shaman (Gold)	PREALIGN:NG,LG,LN
+# Class Name, Skill Pts/LVL Class Skills
+CLASS:Dragon Shaman (Gold)	STARTSKILLPTS:2		CSKILL:Climb|TYPE.Craft|Intimidate|Knowledge (Nature)|Search|Disguise|Heal|Swim
+###Block:Proficiencies
+1	ABILITY:Special Ability|AUTOMATIC|All Automatic Proficiencies
+1	AUTO:FEAT|Simple Weapon Proficiency
+1	AUTO:FEAT|Armor Proficiency (Light)|Armor Proficiency (Medium)
+1	AUTO:FEAT|Shield Proficiency
+# Dragon Shaman Draconic Aura Variables
+#	DRACONICAURABASE	The Level of Draconic Aura (1/5 Levels + 1)
+#	DRACONICAURASKNOWN	The number of Auras known at any one time
+#	DRACONICBREATHDC	The DC of Breath Weapon
+#	DRACONICBREATHDMG	The Damage Dice of Breath Weapon
+#	DRACONICBREATHRANGE	The Range of the Breath Weapon
+#	DRAGONSHAMANLVL		The Level of Dragon Shaman for Draconic Adaptation
+#	TOUCHOFVITALITYLVL	Level Modifer for Touch of Vitality (Su)
+### Dragon Shaman Variables
+1	DEFINE:DRAGONSHAMANLVL|0
+1	BONUS:VAR|DRAGONSHAMANLVL,TOUCHOFVITALITYLVL|CL
+1	BONUS:VAR|DRACONICAURABASE|DRAGONSHAMANLVL/5+1
+###Block:Level Progression
+1	AUTO:FEAT|Draconic Aura
+2	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+3	AUTO:FEAT|Draconic Adaptation	
+4	AUTO:FEAT|Draconic Breath Weapon|Draconic Resolve
+6	AUTO:FEAT|Touch of Vitality
+7	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+8	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+9	AUTO:FEAT|Draconic Energy Immunity
+12	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+14	AUTO:FEAT|Commune with Dragon Spirit
+16	BONUS:ABILITYPOOL|Dragon Shaman Skill Focus|1
+17	BONUS:COMBAT|AC|1|TYPE=NaturalArmor.replace
+19	AUTO:FEAT|Draconic Wings
+
+
+### Harper Scout Block
+CLASS:Harper Scout	OUTPUTNAME:Harper Scout	TYPE:BASE.PC.CUSTOM	ABB:HprSc	HD:6	MAXLEVEL:5	SOURCEPAGE:Chap.1, Harper Scout	BONUS:CHECKS|BASE.Fortitude|CL/3	BONUS:CHECKS|BASE.Reflex,BASE.Will|CS/2+2	BONUS:COMBAT|BAB|CL*3/4
+# Pre-requisites
+CLASS:Harper Scout	PREALIGN:LG,NG,CG,LN,N,CN	PRESKILL:1,Bluff=4,Diplomacy=8,Knowledge (TYPE=Local)=4,TYPE.Perform=5,Sense Motive=2,Survival=2	PREFEAT:1,Alertness=1,Iron Will=1
+# Skills
+CLASS:Harper Scout	STARTSKILLPTS:4	CSKILL:Appraise|Bluff|Climb|TYPE.Craft|Diplomacy|Disguise|Escape Artist|Gather Information|Hide|Jump|TYPE.Knowledge|Listen|Move Silently|TYPE.Perform|Sleight of Hand|TYPE.Profession|Sense Motive|Speak Language|Swim|Tumble|Survival
+CLASS:Harper Scout		SPELLSTAT:CHA	SPELLTYPE:Arcane	MEMORIZE:NO	BONUS:CASTERLEVEL|Bard|CL
+### Harper Scout Variables
+1	AUTO:FEAT|Iron Will
+1	AUTO:FEAT|Alertness
+###Block: Abilities
+#1	BONUS:VAR|HarperKnowledgeLvl|CL	BONUS:VAR|HarperKnowledge|HarperKnowledgeLvl			ABILITY:Special Ability|AUTOMATIC|Harper Knowledge
+1	BONUS:VAR|HarperKnowledgeLvl|CL	BONUS:VAR|HarperKnowledge|HarperKnowledgeLvl	ABILITY:Special Ability|AUTOMATIC|Harper Knowledge
+#1	SAB:Harpers Knowledge (+%)|HarperKnowledge	BONUS:VAR|HarperKnowledge|CL=Harper Scout	
+###Block: Level Progression
+1	CAST:0,0	KNOWN:0,2
+2	CAST:0,1	KNOWN:0,4
+3	CAST:0,1,0	KNOWN:0,4,2
+4	CAST:0,1,1	KNOWN:0,4,4
+5	CAST:0,1,1,0	KNOWN:0,4,4,2
+
+#1	BONUS:VAR|HarperFavoredEnemyLVL|CL	ABILITY:Special Ability|AUTOMATIC|Basic Favored Enemy|Harper Favored Enemy

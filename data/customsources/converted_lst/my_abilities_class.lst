@@ -1,0 +1,73 @@
+######### Block: Dragon Shaman Internal
+##### Dragon Shaman Internal
+### Draconic Auras
+Draconic Aura (Energy)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Energy) +% bonus on save DC for fire effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of fire type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Brass)=1,Dragon Shaman (Gold)=1,Dragon Shaman (Red)=1	SAB:Draconic Aura (Energy) +% bonus on save DC for cold effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of cold type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Silver)=1,Dragon Shaman (White)=1	SAB:Draconic Aura (Energy) +% bonus on save DC for electricity effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of electricity type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Blue)=1,Dragon Shaman (Bronze)=1	SAB:Draconic Aura (Energy) +% bonus on save DC for acid effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of acid type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Black)=1,Dragon Shaman (Copper)=1,Dragon Shaman (Green)=1	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Energy Shield)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of cold damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Silver)=1,Dragon Shaman (White)=1	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of fire damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Brass)=1,Dragon Shaman (Gold)=1,Dragon Shaman (Red)=1	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of electricity damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Blue)=1,Dragon Shaman (Bronze)=1	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of acid damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Black)=1,Dragon Shaman (Copper)=1,Dragon Shaman (Green)=1	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Power)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Power) +% on melee damage rolls|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Presence)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Presence) +% bonus on Bluff, Diplomacy and Intimidate checks|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Resistance)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Resistance) +% resistance to cold|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Silver)=1,Dragon Shaman (White)=1	SAB:Draconic Aura (Resistance) +% resistance to electricity|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Blue)=1,Dragon Shaman (Bronze)=1	SAB:Draconic Aura (Resistance) +% resistance to fire|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Brass)=1,Dragon Shaman (Gold)=1,Dragon Shaman (Red)=1	SAB:Draconic Aura (Resistance) +% resistance to acid|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Black)=1,Dragon Shaman (Copper)=1,Dragon Shaman (Green)=1	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Senses)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Senses) +% bonus on Listen and Spot checks as well as Initiative checks|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Toughness)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Toughness) DR %/magic|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality.Aura	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Vigor)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Vigor) Fast Healing %, only affects characters at or below on-half their full normal hit points|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Swiftness)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Swiftness) +% bonus on Climb, Jump and Swim checks. Also increased climb, fly and swim speeds by % (The aura does not grant you a fly or swim speed if you do not already have one)|DraconicAuraBase|DraconicAuraBase*5	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Insight)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Insight) +% bonus on Deciper Script, Knowledge and Spellcraft checks.|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Resolve)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Resolve) +% bonus on Concentration checks and on saves against fear, paralysis and sleep effects|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality.Aura	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Stamina)	CATEGORY:Draconic Aura	VISIBLE:YES	SAB:Draconic Aura (Stamina) +% bonus on Constitution checks (but not Constitution-based skill checks) and Fortitude Saves.|DraconicAuraBase	TYPE:DraconicAura.SpecialQuality.Aura	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+### Harper Priest Blessings
+Eldrath's Pool	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	SAB:May create water 1/day as a cleric equaly to highest divine spellcasting level	DESC:May create water 1/day as a cleric equaly to highest divine spellcasting level	PREVARGT:HarperPriestBlessingLvl,1
+
+Silvanus's Staff	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	DESC:Weapon Focus (Quarterstaff)	AUTO:FEAT|Weapon Focus (Quarterstaff)	PREVARGT:HarperPriestBlessingLvl,2
+
+Deneir's Eye	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	SAB:+2 holy bonus on saves against glyphs, runes and symbols	DESC:+2 holy bonus on saves against glyphs, runes and symbols	PREVARGT:HarperPriestBlessingLvl,3
+
+Milil's Voice	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	SAB:+1 holy bonus on all Charisma-based skill checks	DESC:+1 holy bonus on all Charisma-based skill checks	BONUS:SKILL|STAT.CHA|1	PREVARGT:HarperPriestBlessingLvl,4
+
+Meilikki's Step	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	BONUS:MOVEADD|TYPE.Walk|10|PREARMORTYPE:1,TYPE.Light,TYPE.Medium	DESC:Add +10 ft. to speed in light or medium armor	PREVARGT:HarperPriestBlessingLvl,5
+
+Lliira's Heart	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	SAB:+2 holy bonus on saves against compulsion and fear effects	DESC:+2 holy bonus on saves against compulsion and fear effects	PREVARGT:HarperPriestBlessingLvl,6
+
+# This one needs work in order to allow feat selection
+Oghma's Insight	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	AUTO:FEAT|Skill Focus	DESC:Skill Focus (any Knowlege) feat	PREVARGT:HarperPriestBlessingLvl,7
+
+Selune's Radiance	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	BONUS:VISION|Low-Light|30	DESC:Low-light vision (or double range of existing low-light vision)	VISIBLE:YES	PREVARGT:HarperPriestBlessingLvl,8
+
+Mystra's Grace	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	SAB:Once per day may add +2 luck bonus to single saving throw (can be added after save result is known)	DESC:Once per day may add +2 luck bonus to single saving throw (can be added after save result is known)	VISIBLE:YES	PREVARGT:HarperPriestBlessingLvl,9
+
+Tymora's Smile	CATEGORY:Special Ability	TYPE:HarperPriestBlessing.SpecialQuality	VISIBLE:YES	PREVARGT:HarperPriestBlessingLvl,10
+
+### Harper Scout Class Abilities ###
+# TODO: Fix this so it is using Harper Favored enemies only instead of Basic Favored Enemies
+Harper Favored Enemy	CATEGORY:Special Ability	TYPE:Internal	VISIBLE:NO	DEFINE:HarperFavoredEnemyLVL|0	BONUS:VAR|FavoredEnemies|HarperFavoredEnemyLVL/4+1	BONUS:VAR|FavoredEBonuses|HarperFavoredEnemyLVL/4
+
+Harper Knowledge	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	DEFINE:HarperKnowledge|0	DEFINE:HarperKnowledgeLvl|0	DESC:+%1|HarperKnowledge	BONUS:VAR|HarperKnowledge|INT
+
+###Block: Favored Enemies ------------------------------------------------------------------------------------------------------
+# Ability Name	Category of Ability	Type	Visible	Define	Description	Source Page	Aspects
+#Basic Favored Enemy	CATEGORY:Special Ability	TYPE:Internal	VISIBLE:NO	DEFINE:FavoredBase|2	DEFINE:FavoredEnemies|0	DEFINE:FavoredEBonuses|0
+# Ability Name					Category of Ability		Type								Visible	Define												Description					Source Page				Aspects
+
+#Favored Enemy (Church of Bane)			CATEGORY:Special Ability	TYPE:FavoredEnemy.Extraordinary.SpecialAttack	VISIBLE:YES	DEFINE:FavoredChurchOfBane|FavoredBase							DESC:+%1|FavoredChurchOfBane		SOURCEPAGE:ClassesII.rtf	ASPECT:Ability Benefit|+%1|FavoredChurchOfBane
+
+#Favored Bonus__ChurchOfBane		CATEGORY:Special Ability	TYPE:FavoredEnemyBonus	VISIBLE:DISPLAY	PREABILITY:1,CATEGORY=Special Ability,Favored Enemy (Church of Bane)			STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|FavoredChurchOfBane|2			SOURCEPAGE:ClassesII.rtf
+
+Favored Enemy (Cult of the Dragon)			CATEGORY:Special Ability	TYPE:FavoredEnemy.Extraordinary.SpecialAttack	VISIBLE:YES	DEFINE:FavoredCultOfTheDragon|FavoredBase							DESC:+%1|FavoredCultOfTheDragon		SOURCEPAGE:ClassesII.rtf	ASPECT:Ability Benefit|+%1|FavoredCultOfTheDragon
+
+#Energy Resistance	TYPE:Special Ability	DEFINE:AcidResistance|0	DEFINE:ColdResistance|0	DEFINE:ElectricityResistance|0	DEFINE:FireResistance|0	DEFINE:SonicResistance|0	DESC:You gain energy resistance 10 to the select type of energy.	CHOOSE:STRING|AcidResistance|ColdResistance|ElectricityResistance|FireResistance|SonicResistance	ABILITY:Special Ability|AUTOMATIC|Resitance to Fire|PREVARGT:FirstResistance,0	BONUS:VAR|FireResistanceBonus|FireResistance	BONUS:VAR|LIST|10
+
+Favored Bonus__CultOfTheDragon		CATEGORY:Special Ability	TYPE:FavoredEnemyBonus	VISIBLE:DISPLAY	PREABILITY:1,CATEGORY=Special Ability,Favored Enemy (Cult of the Dragon)			STACK:YES	MULT:YES	CHOOSE:NOCHOICE	BONUS:VAR|FavoredCultOfTheDragon|2			SOURCEPAGE:ClassesII.rtf
+
+Deity Weapon Focus	CATEGORY:Special Ability	VISIBLE:YES	CHOOSE:WEAPONPROFICIENCY|DEITYWEAPON	BONUS:WEAPONPROF=%LIST|TOHIT|1	DESC:You gain a +1 bonus on all attack rolls you make using the selected weapon.
+
+#Wings	CATEGORY:Special Ability	TYPE:FavoredSoul.SpecialQuality.Extraordinary	VISIBLE:NO	PRECLASS:1,Favored Soul=17	DESC:You grow a pair of wings (feathered if good aligned, batlike if evil aligned, either if neutrally aligned). They allow flight at a speed of 60 feet (good manueverability).	MOVE:Fly,60

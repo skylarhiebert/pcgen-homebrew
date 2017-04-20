@@ -1,0 +1,51 @@
+# CVS $Revision: 4667 $ $Author: jfrazierjr $ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Feat File tags" to find
+#out how the tags in the feats file work. Some of the tags used here are global tags. You will see an alphabetical
+#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+#
+#
+#
+#####1st Example
+
+#Skill Focus		TYPE:General		DESC:See Text		MULT:YES	CHOOSE:SKILLSNAMED|TYPE.Strength|TYPE.Dexterity|TYPE.Constitution|TYPE.Intelligence|TYPE.Wisdom|TYPE.Charisma|1		BONUS:SKILL|LIST|3		SOURCEPAGE:Feats.rtf
+
+#####
+#Each feat takes one line and the first field must be the feat's name. In the Example the name of the feat is Skill Focus.
+#When naming feats you should only use parentheses at the end of the name if the name is not duplicated elsewhere. This is
+#because of how PCGen names feats which can be taken multiple times. For example, the Feat Weapon Focus when taken will display
+#as Weapon Focus(Dagger). Another example is Armor Proficiency (Light), there is no feat named Armor Proficiency so this name
+#is fine. What is happening is when PCGen finds a feat with parentheses that duplicates the name of another feat it assumes
+#that feat is an instance of the one without parentheses and does not display the one with parentheses.
+#
+#The TYPE tag is holding a . (period) delimited list of the types the feat is.
+#
+#The DESC tag is used to hold the description of the Feat. In our files we usually keep the description brief, so the user
+#still need to own the book to make use of of the data, but for your personal files can get as elaborate as you want there.
+#
+#The MULT tag determines if a feat can be taken multiple times. If the value is set to YES, then you MUST also use a CHOOSE
+#tag.
+#
+#The CHOOSE tag must be paired with a MULT:YES tag in feats for it to work properly. It will display a popup window that asks
+#for a selection according to what is being called for. There is a multitude of existing CHOOSE tags in PCGen. If you are
+#looking into the documentation under List File Tag Index, you can find them listed under the topic "CHOOSE tags".
+#
+#The BONUS tags are a group of similar tags, that grant some form of Bonus to another already existing tag. To read a description
+#of them, look in the List File Tag Index under the topic "Bonus tags".
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the feat. This will be displayed in PCGen.
+
+Tireless	TYPE:General	DESC:You reduce the effects of exhaustion and fatigue by one step.  You cannot become exhausted. If you are exposed to an effect or condition that would normally make you exhausted (such as the spell waves of exhaustion,) you become fatigued instead. If an effect or condition (such as the end of barbarian rage) would normally make you fatigued, that effect is negated.	MULT:NO
+
+Earth Power	TYPE:Psionic	DESC:You draw psionic energy from raw stone.	BENEFIT:As long as you are psionically focused and standing on stone or unworked earth (including normal soil), you can pull psychic energy from the earth when you manifest a power. When you manifest a power in this way, you pay 1 less power point than you would normally. The use of this feat cannot reduce a power's cost below 1 power point. You cannot use this ability when you expend your psionic focus to enhance the same power in a different manner. For example, if you have the Maximize Power feat, you cannot expend your focus to maximize a power and also reduce the cost of the same power.	MULT:NO	PRESTAT:2,Con=13,Wis=13	PREFEAT:1,Earth Sense
+
+Earth Sense	TYPE:General	DESC:You are in tune with the earth beneath you.	BENEFIT:As long as you are touching the ground, you can take a move action to sense the number of creatures within 20 feet that are also touching the ground and the direction to each one. You cannot pinpoint the location of any creature with this feat.	MULT:NO	PRESTAT:2,Con=13,Wis=13
+
+Divine Ward	TYPE:Divine	PRESA:1,Turn undead,Rebuke undead	BENEFIT:Once every 24 hours, you can spend 10 minutes creating a magical ward between you and one willing target. For the rest of the 24-hour period, you can increase the range of a touch spell to short range (25 feet + 5 feet per two caster levels) if you target the warded creature, and only the warded creature. When you cast a spell in this manner, you must expend a turn or rebuke undead attempt. You can create a ward between you and more than one target, so long as you expend the necessary time and turning attempts. You must expend a yturn or rebuke undead attempt to create each ward beyond the first.

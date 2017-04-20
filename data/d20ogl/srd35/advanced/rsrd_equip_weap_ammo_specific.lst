@@ -1,0 +1,9 @@
+# CVS $Revision: 17892 $ $Author: amaitland $ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
+SOURCELONG:Revised (v.3.5) System Reference Document	SOURCESHORT:RSRD	SOURCEWEB:http://www.wizards.com/default.asp?x=d20/article/srd35	SOURCEDATE:2000-01
+# Original entry by: ???, Thaldorf
+
+# Equipment Name		Output Name					Type										Cost		Weight	Base Quantity	Modifier		Requires Modification?	Source Page				Weapon prop. bonus		Special Property
+Screaming Bolt		OUTPUTNAME:Bolt, [NAME]			TYPE:Magic.Enhancement.Ammunition.SpecificBolt.Individual	COST:267	WT:0		BASEQTY:1		EQMOD:STEEL.WOOD	MODS:YES			SOURCEPAGE:MagicItemsII.rtf	BONUS:WEAPON|DAMAGE,TOHIT|2
+Slaying Arrow								TYPE:Magic.Enhancement.Ammunition.SpecificArrow.Individual	COST:2282	WT:0					EQMOD:STEEL.WOOD					SOURCEPAGE:MagicItemsII.rtf	BONUS:WEAPON|DAMAGE,TOHIT|1	SPROP:Any type or subtype of creature must made a fortitude save (DC 20) or dies (or be destroyed) instantly when hit
+Slaying Arrow (Greater)	OUTPUTNAME:Greater Slaying Arrow	TYPE:Magic.Enhancement.Ammunition.SpecificArrow.Individual	COST:4057	WT:0					EQMOD:STEEL.WOOD					SOURCEPAGE:MagicItemsII.rtf	BONUS:WEAPON|DAMAGE,TOHIT|1	SPROP:Any type or subtype of creature must made a fortitude save (DC 23) or dies (or be destroyed) instantly when hit
+Sleep Arrow									TYPE:Magic.Enhancement.Ammunition.SpecificArrow.Individual	COST:132	WT:0					EQMOD:STEEL.WOOD					SOURCEPAGE:MagicItemsII.rtf	BONUS:WEAPON|DAMAGE,TOHIT|1	SPROP:Opponent must made a fortitude save (DC 11) or fall asleep

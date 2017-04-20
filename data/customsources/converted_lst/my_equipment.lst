@@ -1,0 +1,164 @@
+# CVS $Revision: 5012 $ $Author: eddyanthony $ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Equipment File tags" to find
+#out how the tags in the races file work. Some of the tags used here are global tags. You will see an alphabetical listing
+#of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+#
+#
+#
+#####1st Example
+
+#Dagger		PROFICIENCY:WEAPON|Dagger		TYPE:Weapon.Melee.Finesseable.Ranged.Thrown.Simple.Standard.Piercing.Slashing.Dagger		COST:2	WT:1		CRITMULT:x2		CRITRANGE:2		DAMAGE:1d4		EQMOD:STEEL		WIELD:Light		RANGE:10	SIZE:M
+
+#####
+#
+#####2nd Example
+
+#Saddlebags		TYPE:Goods.Container.Mount.Resizable		CONTAINS:UNLIM|Any=UNLIM	COST:4	WT:8		SOURCEPAGE:Equipment.rtf
+
+#####
+#The Dagger is an Example of a weapon, while the Saddlebags is an item that is set up to be used as a container for other
+#items. The first field is the item's name and is required.
+#
+#The PROFICIENCY tag is only used with weapons, armor and shields. It tells PCGen what Weapon Proficiency name to use from the weapprofs.lst, armorprofs.lst or shieldprofs.lst file.
+#
+#The TYPE tag is used for many filtering and PRExxx tags. TYPE:Armor items should also have the type of SLOTS it uses. This
+#is usually TYPE:Suit. TYPE:Container is a special type name. It activates the CONTAINS tag in the item. Every TYPE:Weapon
+#item must be also have either TYPE:Melee or TYPE:Ranged (TYPE:Weapon.Melee.Foo). TYPE:Double is a special weapon tag. It
+#activates three ALTxxx tags for the second head statistics.
+#
+#The CONTAINS tag is used to define how much and what a container can hold. Any object with CONTAINS must also be TYPE:Container
+#for the CONTAINS tag to be activated.
+#
+#The COST tag sets the cost of the item.
+#
+#The WT tag is holding the item's weight.
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the item. This will be displayed in PCGen.
+#
+#CRITMULT, CRITRANGE, DAMAGE, WIELD, and RANGE are tags that are associated with weapons. They can be used to set up the
+#various weapon stats.
+
+#The SIZE tag determines the size of the Item. F=Fine, D=Diminutive, T=Tiny, S=Small, M=Medium, L=Large, H=Huge, G=Gargantuan,
+#C=Colossal.
+
+#The EQMOD tag calls an equipment modifier to be applied to the base item before looking at other tags. You will need to use
+#the equipment modifier's KEY with this tag, not it's name.
+
+Necklace of Copper Dragon Scales	TYPE:Amulet	COST:135.0	WT:1	SPROP:Upon touching one of the six scales that make up this necklace and uttering a command word, you gain resistance to acide 5 for 1 hour. Once all six scales are used, the necklace becomes dull and loses it's magic.	EQMOD:CHARGED_ITEM_6|CHARGES[6]
+
+Potion Bandolier	COST:60	WT:1	TYPE:Goods.Container.General.Resizable	SPROP:You can ready a potion as a free action.	CONTAINS:UNLIM|Total=12|Potion=12|PowerStone=10|Flask=12|Vial=12|Alchemical=12|Poison=12
+
+Potion Bracer	COST:60	WT:1	TYPE:Goods.Container.General.Resizable	SPROP:You can ready a potion as a free action.	CONTAINS:UNLIM|Total=12|Potion=12|PowerStone=10|Flask=12|Vial=12|Alchemical=12|Poison=12
+
+Dragon Spirit Cincture	COST:2000	TYPE:Magic.Belt	WT:0	SPROP:While you wear a dragon spirite cinture your breath weapon is increased by one die. If you are also holding a magic weapon that deals the same type of damage, your breath weapon save DC increases by 1.	BONUS:VAR|DRACONICBREATHDMG|1
+
+Chronocharm of the Horizon Walker	COST:1	WT:1	TYPE:Magic.Amulet	SPROP:Does what a Chronocharm does.
+
+Gloves of Frostbite	COST:4500	TYPE:Glove	WT:0	TYPE:Magic	SPROP:While wearing Gloves of Frostbite, all +1 Weapons wielded gain 1d6 cold damage.
+
+Anklet of Translocation	COST:1400	TYPE:Magic.Boot	WT:0	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Crystal of Arrow Deflection (Least)	COST:500	WT:0	TYPE:Magic	SPROP:This augment crystal grants you a +2 competence bonus to AC against ranged attacks.	PRETYPE:1,Masterwork	BONUS:COMBAT|AC|2|TYPE=Misc
+
+Refilling Mug	COST:500	WT:1	TYPE:Magic	SPROP:When you recite the command word, this mug fills with 12 ounces of the last non-magical/non-alchemical liquid that was poured into it.
+
+Everfull Mug	COST:200	WT:0	TYPE:Magic	SPROP:Three times per day, when you recite the command word, this mug fills with 12 ounces of water, cheap ale, or watery wine (your choice).
+
+Everlasting Rations	COST:350	WT:2	TYPE:Magic	SPROP:This pouch contains enough trail rations to feed a Medium creature for one day. Every morning at sunrise, the pouch magically creates another day's worth of rations.
+
+Everlasting Feedbag	COST:800	WT:1	TYPE:Magic	SPROP:When you place an everlasting feedbag around the muzzle of a horse, donkey or other equine animal, suitable feed fills the bag and is continuously replenished until it is removed from the animal. Any uneaten feed disappears at that time. An everlasting feedbag can be used once per day.
+
+Boots of Striding Springing and Translocating	COST:6200	WT:1	TYPE:Magic.Boot	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Boots of Expeditious Retreat and Translocation	COST:8700	TYPE:Magic.Boot	BONUS:MOVEADD|TYPE.Walk|30	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Periapt of Health and Shielding	COST:8250	BASEITEM:Brooch of Shielding
+
+Eternal Dorje of Knock (Psionic)	COST:4420	EQMOD:CHARGED_ITEM_2|CHARGES[2]
+
+Eternal Dorje of Levitate (Psionic)	COST:4420	EQMOD:CHARGED_ITEM_2|CHARGES[2]
+
+"Glowhammer" (Heavy Mace)	DESC:Weapon of Marthammor Duin
+
+Magic Bedroll	COST:500	WT:6	TYPE:Magic	DESC:Magic Bedroll
+
+Truedeath Crystal (Greater)	COST:10000	TYPE:Magic.WeaponCrystal	SPROP:A weapon with this crystal attached deals an extra 1d6 points of damage to undead, functions as a ghost touch weapon, and can deliver sneak attacks and cricital hits against undead as if they were living creatures.
+
+Demolition Crystal (Greater)	COST:6000	TYPE:Magic.WeaponCrystal	SPROP:A weapon with this crystal attached deals an extra 1d6 points of damage to constructs, functions as an adamantite weapon, and can deliver sneak attacks and cricital hits against constructs as if they were living creatures.
+
+Crystal of Lifekeeping (Greater)	COST:5000	WT:0	TYPE:Magic	SPROP:This augment crystal grants you a +5 competence bonus on saving throws against energy drain attacks, inflict spells, death spells and death effects. In addition, if you fail a save against any of these effects, you can choose to reroll the save as an immediate (mental) action once per day.	PRETYPE:1,Masterwork
+
+Crystal of Fire Assault (Lesser)	COST:3000	WT:0	TYPE:Magic	SPROP:This augment crystal grants you an extra 1d6 fire damage to the weapon's damage. This bonus damage doesn't stack with any fire damage dealt by the weapon.	PRETYPE:1,Masterwork
+
+Iron Ward Diamond (Least)	COST:500	WT:0	TYPE:Magic	SPROP:Prevents up to 10 points of damage per day, after which it becomes inert until the following day. This stacks with similar damage reduction granted by any other source.	DR:1/-
+
+Longsword.COPY=Longsword of  Hezrim "Luxlex"	EQMOD:PLUS1W.STEEL	SPROP:When the command word is spoken, the Longsword of Hezrim glows with pure white light, brightly illuminating a 20-foot-radius area and providing shadowy illumination for another 20 feet beyond that, this ability can be extinguished with another utterance of the command word.
+
+Harper Pin (Lesser)	COST:0	TYPE:Magic	BASEITEM:Ring (Mind Shielding)
+
+Tymora's Shuriken	COST:646.2	TYPE:Magic	BASEITEM:Shuriken	EQMOD:HOLY_M.PLUS1W.RETRN
+
+Luck Points	COST:0	SPROP:Luck Points	TYPE:Special.Consumable
+
+Action Point	COST:0	SPROP:Action Points	TYPE:Special.Consumable
+
+Ring of Communication	COST:2000	TYPE:Ring.Magic	WT:0	SPROP:When you activate a ring of communication for the next minute you can clearly hear any words spoken by anyone within 1 mile who is wearing another ring of communication to which you are attuned. The volume of the speech and the background noise at either end make no difference; whispers are audible above even the sounds of combat. Any two or more ring wearers need only touch their rings together and speak the command word in unison to attune the rings to each other. Any number of rings can become attuned to one another in this manner, so long as all are touched together at the same time. A ring remains attuned to the others until you attune it to a different ring.
+
+Ring of Mystic Healing	COST:3500	TYPE:Ring.Magic	WT:0	SPROP:A ring of mystic healing provides a boost to your healing spells. When casting cure spells, you gain a +1 competence bonus to your caster level. This is a continuous effect and requires no activation. In addition, this ring has 3 charges which are renewed each day at dawn. Spending charges grants a bonus to the damage healed by the next cure spell you cast before the end of your turn. 1 charge:+2d6. 2 charges:+3d6 3 charges:+4d6.
+
+Monocle of Perusal	COST:6500	TYPE:Magic.Eyegear	WT:0	BONUS:SKILLRANK|Appraise|5	SPROP:Allows you to use identify three times per day
+
+Contact Medallion	COST:3000	TYPE:Magic.Amulet	WT:0	SPROP:When you activate a contact medallion you forge a telepathic bond (as Rary's telepathic bond) with one person who is within 1 mile and known to you. This bond lasts for 1 minute.
+
+Shield (Heavy/Metal).COPY=Shield of Blinding	WT:15	BASEITEM:Shield (Heavy/Metal)	EQMOD:STEEL.PLUS1S.BLIND
+
+Scimitar.COPY=IcingDeath	TYPE:Magic	EQMOD:STEEL.PLUS3W.FROST_M.BANE_M|Outsiders (evil).INT_ITEM.INT_ITEM_ALIGN_CG.INT_ITEM_KNOWLEDGE	SPROP:Extinguish magical fires by touch, extinguish all natural fires within 20 feet. Fire Resistance (10). Knowledge Planes
+
+Valenar Double Scimitar	OUTPUTNAME:Scimitar, Valenar double	PROFICIENCY:WEAPON|Sword (Two-Bladed)	TYPE:Weapon.Melee.Exotic.Double.Standard.Slashing.Sword	COST:125	WT:15	SLOTS:2	CRITMULT:x2	CRITRANGE:3	ALTCRITMULT:x2	ALTCRITRANGE:3	DAMAGE:1d6	ALTDAMAGE:1d6	EQMOD:STEEL	ALTEQMOD:STEEL	WIELD:TwoHanded	SIZE:M
+
+Valenar Double Scimitar.COPY=Goodly Valenar Double Scimitar	PREALIGN:LG,NG,CG
+
+Healing Belt	TYPE:Magic.Belt	COST:350	EQMOD:BNS_SKL_CMP|Heal=+2	EQMOD:CHARGED_ITEM_3|CHARGES[3]	SPROP:Charges are renewed each day at dawn. Spending 1 or more charges allows you to channel positive energy and heal damage with a touch. (You can also use this ability to harm undead, dealing them an equivalent amount of damage instead.) 1 Charge - Heals 2d8 points of damage, 2 Charges - Heals 3d8 points of damage, 3 Charges - Heals 4d8 points of damage.
+
+Traveling Papers	TYPE:Documents	COST:0.2
+
+Identification Papers, Standard	TYPE:Documents	COST:2
+
+Identification Papers, with Portrait	TYPE:Documents	COST:5
+
+Living Breastplate	PROFICIENCY:ARMOR|Breastplate	TYPE:Magic.Armor.Medium.Suit.Normal	COST:0	WT:8	ACCHECK:-2	MAXDEX:5	SPELLFAILURE:15	BONUS:COMBAT|AC|8|TYPE=Armor	EQMOD:HIDE	BONUS:STAT|CON|4	DR:10/-
+
+Field Dressing Kit	COST:40	EQMOD:Masterwork WEIGHT:0	SIZE:M	TYPE:Goods.Tools.Artisan
+
+Wine (Fine/Bottle).COPY=Goodberry Wine
+
+Scimitar.Copy=The Hornblade	DESC:Favored weapon of Meilikki	COST:0
+
+Berry	TYPE:Food	COST:0
+
+Goodberry	TYPE:Food.Magic	COST:0
+
+Book Volume 2 Flora and Fauna	TYPE:Book	COST:0	SPROP:+2 Knowledge Nature for Flora and Fauna
+
+Woodworked Scrimshaw	TYPE:Art	COST:0
+
+Dragonskin Backpack	TYPE:Goods.Container.General.Resizable	CONTAINS:UNLIM|Any	COST:2	WT:2	SOURCEPAGE:p.126
+
+Cloak of Resistance +2.COPY=Dragonskin Cloak of Resistance +2	EQMOD:FIRE_RES_IMP.ACID_RES_IMP	SPROP:Fly as per Dragon Manueverability for xx minutes per day
+
+Dragonskin Gloves of Dexterity +4.COPY=Gloves of Dexterity +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP
+
+Dragonskin Armbands of Giant Strength +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP		TYPE:Magic.Wondrous.Glove		COST:36000	WT:1	SOURCEPAGE:MagicItemsV	BONUS:STAT|STR|4|TYPE=Enhancement
+
+Dragonskin Gloves of Giant Strength +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP		TYPE:Magic.Wondrous.Glove		COST:36000	WT:1	SOURCEPAGE:MagicItemsV	BONUS:STAT|STR|4|TYPE=Enhancement
+
+Amulet of Natural Armor +3.COPY=Dragonbone Amulet of Natural Armor +3	EQMOD:FIRE_RES_IMP.ACID_RES_IMP
+

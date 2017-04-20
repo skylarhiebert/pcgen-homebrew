@@ -1,0 +1,52 @@
+# CVS $Revision: 3288 $ $Author: tir-gwaith $ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Deities File tags" to find
+#out how the tags in the deitis file work. Some of the tags used here are global tags. You will see an alphabetical
+#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+#
+#
+#
+#####Example
+
+#Mosat		DOMAINS:Chaos,Knowledge,Animal|PREALIGN:LG,LN,NG,TN,CG,CN		DESC:The CONTENTed One		SYMBOL:a Kitten on a keyboard		DEITYWEAP:Tiger claws		ALIGN:CG	PANTHEON:BoD	SOURCEPAGE:not recorded yet
+
+#####
+#The first field is the Deity Name, this is a required field and does not have a tag.
+#
+#The DOMAINS tag is a list of domains that the deity grants to it's divine spell casting followings. The domain name MUST
+#match the domain names listed in the domain list file.
+#To limit alignments allowed for classes (such as cleric) to gain domains, use PREALIGN on the DOMAINS tag.
+#
+#The DESC tag is used for a quick description of the deity.
+#
+#The SYMBOL tag is used on the output sheet to display what the holy symbol is for this deity.
+#
+#The DEITYWEAP is holding a list of the deity's favored weapon(s). The Weapon name MUST match exactly what is listed in the
+#weapon proficiencies list file.
+#
+#The ALIGN tag holds the two letter abbreviated alignment of the deity itself.
+#
+#The PANTHEON tag is used to specify what pantheon the deity belongs to.
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the deity. This will be displayed in PCGen.
+
+Bahamut	DOMAINS:Air,Cold,Good,Luck,Protection|PREALIGN:LG,LN,NG	TITLE:The Dragon God	SYMBOL:Star above a milky nebula	DEITYWEAP:Pick (Heavy)|bite	ALIGN:LG	SOURCEPAGE:CompleteDivine_109	APPEARANCE:A long, sinuous dragon with platinum scales and catlike eyes of shifting colors.
+
+Marthammor Duin	DOMAINS:Dwarf,Good,Protection,Travel|PREALIGN:CG,LG,NG	DESC:Finder of Trails, Watcher over Wanderers, the Watchful Eye. SYMBOL:Upright Mace in front of Fur-trimmed leather boot	DEITYWEAP:Mace (Heavy)	ALIGN:NG	RACE:Dwarf
+
+Heironeous	DOMAINS:Glory,Good,Inquisition,Law,War|PREALIGN:LG,LN,NG	DESC:God of Valor	DEITYWEAP:Longsword	ALIGN:LG	PANTHEON:FaP
+
+Tymora	DOMAINS:Chaos,Good,Luck,Protection,Travel|PREALIGN:CG,NG,CN	DESC:Lady Luck	DEITYWEAP:Shuriken	ALIGN:CG	PANTHEON:FaP
+
+Pelor	DOMAINS:Glory,Good,Healing,Strength,Sun|PREALIGN:LG,NG,CG,TN	DESC:God of the Sun	DEITYWEAP:Mace (Heavy)	ALIGN:NG	PANTHEON:FaP
+
+Dol Dorn	DOMAINS:Chaos,Good,Strength,War|PREALIGN:LG,CG,NG,TN	DESC:God of Strength at Arms	DEITYWEAP:Longsword	ALIGN:CG	PANTHEON:Eberron
+
+Meilikki	DOMAINS:Animal,Good,Plant,Travel|PREALIGN:CG,LG,NG	DESC:Meilkki is a good-humored deith who is quick to smile and confident in her actions. Druidic followers of Meilikki may use armor and weapons allowed to rangers and not be in violation of their sacred oaths. Clerics, druids and spellcasting rangers of Meilikki pray for spells in the morning or evening but are required to observe both.	TITLE:Our Lady of the Forest,the Forest Queen	DEITYWEAP:The Hornblade	ALIGN:NG	SOURCEPAGE:FaithsAndPantheons_48	APPEARANCE:Meilkki appears as a robust, russet-haired, brown-eyed woman of shapely form and lithe grace, garbed in leather armor of muted greens and browns	PANTHEON:FaP	SYMBOL:Gold-horned, blue-eyed unicorn's head facing left	WORSHIPPERS:Druids, fey creatuyres, foresters, and rangers

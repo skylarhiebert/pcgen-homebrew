@@ -1,0 +1,97 @@
+# CVS $Revision: 5012 $ $Author: eddyanthony $ -- Thu Feb 22 13:04:59 2007 -- reformated by prettylst.pl v1.36 (build 2045)
+SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com
+
+#insert your data here
+
+#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
+#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
+#
+#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Equipment File tags" to find
+#out how the tags in the races file work. Some of the tags used here are global tags. You will see an alphabetical listing
+#of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
+#
+#
+#
+#
+#####1st Example
+
+#Dagger		PROFICIENCY:WEAPON|Dagger		TYPE:Weapon.Melee.Finesseable.Ranged.Thrown.Simple.Standard.Piercing.Slashing.Dagger		COST:2	WT:1		CRITMULT:x2		CRITRANGE:2		DAMAGE:1d4		EQMOD:STEEL		WIELD:Light		RANGE:10	SIZE:M
+
+#####
+#
+#####2nd Example
+
+#Saddlebags		TYPE:Goods.Container.Mount.Resizable		CONTAINS:UNLIM|Any=UNLIM	COST:4	WT:8		SOURCEPAGE:Equipment.rtf
+
+#####
+#The Dagger is an Example of a weapon, while the Saddlebags is an item that is set up to be used as a container for other
+#items. The first field is the item's name and is required.
+#
+#The PROFICIENCY tag is only used with weapons, armor and shields. It tells PCGen what Weapon Proficiency name to use from the weapprofs.lst, armorprofs.lst or shieldprofs.lst file.
+#
+#The TYPE tag is used for many filtering and PRExxx tags. TYPE:Armor items should also have the type of SLOTS it uses. This
+#is usually TYPE:Suit. TYPE:Container is a special type name. It activates the CONTAINS tag in the item. Every TYPE:Weapon
+#item must be also have either TYPE:Melee or TYPE:Ranged (TYPE:Weapon.Melee.Foo). TYPE:Double is a special weapon tag. It
+#activates three ALTxxx tags for the second head statistics.
+#
+#The CONTAINS tag is used to define how much and what a container can hold. Any object with CONTAINS must also be TYPE:Container
+#for the CONTAINS tag to be activated.
+#
+#The COST tag sets the cost of the item.
+#
+#The WT tag is holding the item's weight.
+#
+#The SOURCEPAGE tag can be used to hold a reference to where you can find the item. This will be displayed in PCGen.
+#
+#CRITMULT, CRITRANGE, DAMAGE, WIELD, and RANGE are tags that are associated with weapons. They can be used to set up the
+#various weapon stats.
+
+#The SIZE tag determines the size of the Item. F=Fine, D=Diminutive, T=Tiny, S=Small, M=Medium, L=Large, H=Huge, G=Gargantuan,
+#C=Colossal.
+
+#The EQMOD tag calls an equipment modifier to be applied to the base item before looking at other tags. You will need to use
+#the equipment modifier's KEY with this tag, not it's name.
+
+Necklace of Copper Dragon Scales	TYPE:Amulet	COST:135.0	WT:1	SPROP:Upon touching one of the six scales that make up this necklace and uttering a command word, you gain resistance to acide 5 for 1 hour. Once all six scales are used, the necklace becomes dull and loses it's magic.	EQMOD:CHARGED_ITEM_6|CHARGES[6]
+
+Potion Bandolier	COST:60	WT:1	TYPE:Goods.Container.General.Resizable	SPROP:You can ready a potion as a free action.	CONTAINS:UNLIM|Total=12|Potion=12|PowerStone=10
+
+Dragon Spirit Cincture	COST:2000	TYPE:Magic.Belt	WT:0	SPROP:While you wear a dragon spirite cinture your breath weapon is increased by one die. If you are also holding  a magic weapon that deals the same type of damage, your breath weapon save DC increases by 1.	BONUS:VAR|DRACONICBREATHDMG|1
+
+Chronocharm of the Horizon Walker	COST:1	WT:1	TYPE:Magic.Amulet	SPROP:Does what a Chronocharm does.
+
+Gloves of Frostbite	COST:4500	TYPE:Glove	WT:0	TYPE:Magic	SPROP:While wearing Gloves of Frostbite, all +1 Weapons wielded gain 1d6 cold damage.
+
+Anklet of Translocation	COST:1400	TYPE:Boot	WT:0	TYPE:Magic	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Crystal of Arrow Deflection (Least)	COST:500	WT:0	TYPE:Magic	SPROP:This augment crystal grants you a +2 competence bonus to AC against ranged attacks.	PRETYPE:1,Masterwork	BONUS:COMBAT|AC|2|TYPE=Misc
+
+Refilling Mug	COST:500	WT:1	TYPE:Magic	SPROP:When you recite the command word, this mug fills with 12 ounces of the last non-magical/non-alchemical liquid that was poured into it.	
+
+Everlasting Rations	COST:350	WT:2	TYPE:Magic	SPROP:This pouch contains enough trail rations to feed a Medium creature for one day. EVery morning at sunrise, the pouch magically creates another day's worth of rations.
+
+Boots of Striding, Springing and Translocating	COST:6200	WT:1	TYPE:Magic.Boots	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Boots of Expeditious Retreat and Translocation	COST:8700	TYPE:Magic.Boots	BONUS:MOVEADD|TYPE.Walk|30	SPROP:Two times per day you may make a short dimensional hop up to 10 feet away with no chance of error. The new space must be within line of sight and line of effect. This is a swift action.
+
+Periapt of Health and Shielding	COST:8250	BASEITEM:Brooch of Shielding
+
+Eternal Dorje of Knock (Psionic)	COST:4420	EQMOD:CHARGED_ITEM_2|CHARGES[2]
+
+Eternal Dorje of Levitate (Psionic)	COST:4420	EQMOD:CHARGED_ITEM_2|CHARGES[2]
+
+"Glowhammer" (Heavy Mace)	DESC:Weapon of Marthammor Duin
+
+Magic Bedroll	COST:500	WT:6	TYPE:Magic	DESC:Magic Bedroll
+
+Truedeath Crystal (Greater)	COST:10000	TYPE:Magic.WeaponCrystal	SPROP:A weapon with this crystal attached deals an extra 1d6 points of damage to undead, functions as a ghost touch weapon, and can deliver sneak attacks and cricital hits against undead as if they were living creatures.
+
+Demolition Crystal (Greater)	COST:6000	TYPE:Magic.WeaponCrystal	SPROP:A weapon with this crystal attached deals an extra 1d6 points of damage to constructs, functions as an adamantite weapon, and can deliver sneak attacks and cricital hits against constructs as if they were living creatures.
+
+Crystal of Lifekeeping (Greater)	COST:5000	WT:0	TYPE:Magic	SPROP:This augment crystal grants you a +5 competence bonus on saving throws against energy drain attacks, inflict spells, death spells and death effects. In addition, if you fail a save against any of these effects, you can choose to reroll the save as an immediate (mental) action once per day.	PRETYPE:1,Masterwork
+
+Longsword of  Hezrim "Luxlex"	COST:515	PROFICIENCY:WEAPON|Longsword		TYPE:Weapon.Melee.Martial.Standard.Slashing.Sword		WT:4	CRITMULT:x2	CRITRANGE:2		DAMAGE:1d8	EQMOD:STEEL.PLUS1W	WIELD:OneHanded	SIZE:M	SPROP:When the command word is spoken, the Longsword of Hezrim glows with pure white light, brightly illuminating a 20-foot-radius area and providing shadowly illumination for another 20 feet beyond that, this ability can be extinguished with another utterance of the command word.
+
+Longsword of  Hezrim
+
+Luck Points	COST:0	SPROP:Luck Points	TYPE:Special.Consumable

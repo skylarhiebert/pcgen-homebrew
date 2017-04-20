@@ -1,0 +1,38 @@
+######### Block: Dragon Shaman Internal
+##### Dragon Shaman Internal
+### Draconic Auras
+Draconic Aura (Energy)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Energy) +% bonus on save DC for fire effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of fire type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Brass),Dragon Shaman (Gold),Dragon Shaman (Red)	SAB:Draconic Aura (Energy) +% bonus on save DC for cold effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of cold type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Silver),Dragon Shaman (White)	SAB:Draconic Aura (Energy) +% bonus on save DC for electricity effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of electricity type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Blue),Dragon Shaman (Bronze)	SAB:Draconic Aura (Energy) +% bonus on save DC for acid effects. This bonus applies to spells, powers, spell-like abilities, supernatural abilities or any other ability that has either the appropriate descriptor or deals damage of acid type.|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Black),Dragon Shaman (Copper),Dragon Shaman (Green)	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Energy Shield)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of cold damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Silver),Dragon Shaman (White)	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of fire damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Brass),Dragon Shaman (Gold),Dragon Shaman (Red)	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of electricity damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Blue),Dragon Shaman (Bronze)	SAB:Draconic Aura (Energy Shield) Any creature striking you or your ally with a natural attack or a non-reach melee weapon is dealt % points of acid damage|DraconicAuraBase*2|PRECLASS:1,Dragon Shaman (Black),Dragon Shaman (Copper),Dragon Shaman (Green)	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Power)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Power) +% on melee damage rolls|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf	
+
+Draconic Aura (Presence)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Presence) +% bonus on Bluff, Diplomacy and Intimidate checks|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf	
+
+Draconic Aura (Resistance)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Resistance) +% resistance to cold|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Silver),Dragon Shaman (White)	SAB:Draconic Aura (Resistance) +% resistance to electricity|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Blue),Dragon Shaman (Bronze)	SAB:Draconic Aura (Resistance) +% resistance to fire|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Brass),Dragon Shaman (Gold),Dragon Shaman (Red)	SAB:Draconic Aura (Resistance) +% resistance to acid|DraconicAuraBase|PRECLASS:1,Dragon Shaman (Black),Dragon Shaman (Copper),Dragon Shaman (Green)	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Senses)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Senses) +% bonus on Listen and Spot checks as well as Initiative checks|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf	
+
+Draconic Aura (Toughness)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Toughness) DR %/magic|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf	
+
+Draconic Aura (Vigor)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Vigor) Fast Healing %, only affects characters at or below on-half their full normal hit points|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:PH2.rtf
+
+Draconic Aura (Swiftness)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Swiftness) +% bonus on Climb, Jump and Swim checks. Alsoe increased climb, fly and swim speeds by % (The aura does not grant you a fly or swim speed if you do not already have one)|DraconicAuraBase|DraconicAuraBase*5	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Insight)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Insight) +% bonus on Deciper Script, Knowledge and Spellcraft checks.|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Resolve)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Resolve) +% bonus on Concentration checks and on saves against fear, paralysis and sleep effects|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Draconic Aura (Stamina)	CATEGORY:Supernatural	VISIBLE:YES	SAB:Draconic Aura (Stamina) +% bonus on Constitution checks (but not Constitution-based skill checks) and Fortitude Saves.|DraconicAuraBase	TYPE:DraconicAura.Supernatural.SpecialQuality	MULT:NO	SOURCEPAGE:DragonMagic.rtf
+
+Harper Favored Enemy	CATEGORY:Special Ability	TYPE:Internal	VISIBLE:NO	DEFINE:HarperFavoredEnemyLVL|0	BONUS:VAR|FavoredEnemies|HarperFavoredEnemyLVL/4+1	BONUS:VAR|FavoredEBonuses|HarperFavoredEnemyLVL/4
+
+#Harper Knowledge	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	DEFINE:HarperKnowledge|0	DEFINE:HarperKnowledgeLvl|0	DESC:+%1|HarperKnowledge	BONUS:VAR|HarperKnowledge|INT
+
+Harper Knowledge	CATEGORY:Special Ability	TYPE:SpecialQuality	VISIBLE:YES	DEFINE:HarperKnowledge|0	DEFINE:HarperKnowledgeLvl|0	DESC:+%1|HarperKnowledge	BONUS:VAR|HarperKnowledge|INT
+
+###Block: Favored Enemies ------------------------------------------------------------------------------------------------------
+# Ability Name	Category of Ability	Type	Visible	Define	Description	Source Page	Aspects
+#Basic Favored Enemy	CATEGORY:Special Ability	TYPE:Internal	VISIBLE:NO	DEFINE:FavoredBase|2	DEFINE:FavoredEnemies|0	DEFINE:FavoredEBonuses|0
+# Ability Name					Category of Ability		Type								Visible	Define												Description					Source Page				Aspects
+#Favored Enemy (Aberration)			CATEGORY:Special Ability	TYPE:FavoredEnemy.Extraordinary.SpecialAttack	VISIBLE:YES	DEFINE:FavoredAberration|FavoredBase							DESC:+%1|FavoredAberration		SOURCEPAGE:ClassesII.rtf	ASPECT:Ability Benefit|+%1|FavoredAberration
