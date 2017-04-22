@@ -78,9 +78,9 @@ Luck Points	COST:0	SPROP:Luck Points	TYPE:Special.Consumable
 
 Dragonskin Backpack	TYPE:Goods.Container.General.Resizable	CONTAINS:UNLIM|Any	COST:2	WT:2	SOURCEPAGE:p.126
 
-Cloak of Resistance +2.COPY=Dragonskin Cloak of Resistance +2	EQMOD:FIRE_RES_IMP.ACID_RES_IMP	SPROP:Fly as per Dragon Manueverability for xx minutes per day
+Cloak of Resistance +2.COPY=Dragonskin Cloak of Resistance +2	EQMOD:FIRE_RES_IMP.ACID_RES_IMP	SPROP:Fly as per Dragon Manueverability for 10 minutes per day. Causes Fear (DC16) when hood is raised.
 
-Dragonskin Gloves of Dexterity +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP		BONUS:STAT|DEX|4|TYPE=Enhancement	TYPE:Magic.Wondrous.Glove
+Dragonskin Gloves of Dexterity +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP		BONUS:STAT|DEX|4|TYPE=Enhancement	TYPE:Magic.Wondrous.Glove      SPROP:+1d6 FIre Damage
 
 Dragonskin Armbands of Giant Strength +4	EQMOD:FIRE_RES_IMP.ACID_RES_IMP		BONUS:STAT|STR|4|TYPE=Enhancement	TYPE:Magic.Wondrous.Bracer
 
