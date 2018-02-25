@@ -1,7 +1,7 @@
 PCGVERSION:2.0
 
 # System Information
-CAMPAIGN:Arcane Anthology|CAMPAIGN:Pathfinder Society Field Guide|CAMPAIGN:Ultimate Intrigue|CAMPAIGN:Pathfinder RPG Core Supplements|CAMPAIGN:Adventurer's Armory|CAMPAIGN:Adventurer's Armory 2|CAMPAIGN:Elves of Golarion|CAMPAIGN:Mummys Mask Players Guide|CAMPAIGN:Pathfinder Society Primer|CAMPAIGN:Ultimate Campaign|CAMPAIGN:Weapon Master's Handbook|CAMPAIGN:People of the North|CAMPAIGN:Monster Summoner's Handbook|CAMPAIGN:Faction Guide
+CAMPAIGN:Arcane Anthology|CAMPAIGN:Pathfinder Society Field Guide|CAMPAIGN:Ultimate Intrigue|CAMPAIGN:Inner Sea World Guide|CAMPAIGN:Adventurer's Armory|CAMPAIGN:Adventurer's Armory 2|CAMPAIGN:Elves of Golarion|CAMPAIGN:Faction Guide|CAMPAIGN:Inner Sea Primer|CAMPAIGN:Monster Summoner's Handbook|CAMPAIGN:Mummys Mask Players Guide|CAMPAIGN:Pathfinder RPG Core Supplements|CAMPAIGN:Pathfinder Society Primer|CAMPAIGN:People of the North|CAMPAIGN:Ultimate Campaign|CAMPAIGN:Weapon Master's Handbook|CAMPAIGN:Inner Sea Gods
 VERSION:6.07.05
 ROLLMETHOD:0|EXPRESSION:0
 PURCHASEPOINTS:N
@@ -46,8 +46,8 @@ SPEECHPATTERN:
 PHOBIAS:
 INTERESTS:
 CATCHPHRASE:
-PORTRAIT:/home/shiebert/src/pcgen-homebrew/images/ElfWizard.jpg
-PORTRAITTHUMBNAILRECT:0,0,439,439
+PORTRAIT:C&colon;\cygwin64\home\Skylar\sources\pcgen-homebrew\images\ElfWizard.jpg
+PORTRAITTHUMBNAILRECT:110,0,224,224
 
 # Character Attributes
 STAT:STR|SCORE:15
@@ -74,9 +74,10 @@ TEMPLATESAPPLIED:[NAME:Creature with Class Levels]
 TEMPLATESAPPLIED:[NAME:FACE_5]
 TEMPLATESAPPLIED:[NAME:REACH_5]
 TEMPLATESAPPLIED:[NAME:Wizard Spellbook]
+TEMPLATESAPPLIED:[NAME:Regional Affinity (Kyonin)]
 
 # Character Region
-REGION:None
+REGION:Kyonin
 
 # Character Skills
 SKILL:Acrobatics|OUTPUTORDER:1|
@@ -119,7 +120,7 @@ SKILL:Samurai Mount|OUTPUTORDER:40|
 SKILL:Sense Motive|OUTPUTORDER:41|
 SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:42|
 SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:43|
-SKILL:Spellcraft|OUTPUTORDER:46|CLASSBOUGHT:[CLASS:Wizard|RANKS:3.0|COST:1|CLASSSKILL:Y]
+SKILL:Spellcraft|OUTPUTORDER:45|CLASSBOUGHT:[CLASS:Wizard|RANKS:3.0|COST:1|CLASSSKILL:Y]
 SKILL:Stealth|OUTPUTORDER:47|CLASSBOUGHT:[CLASS:Wizard|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Survival|OUTPUTORDER:48|CLASSBOUGHT:[CLASS:Wizard|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Swim|OUTPUTORDER:49|
@@ -132,7 +133,7 @@ SKILL:Untrained ~ Disable Device|OUTPUTORDER:18|
 SKILL:Untrained ~ Handle Animal|OUTPUTORDER:24|
 SKILL:Untrained ~ Linguistics|OUTPUTORDER:34|
 SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:44|
-SKILL:Untrained ~ Spellcraft|OUTPUTORDER:45|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:46|
 SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:55|
 
 # Character Languages
@@ -149,7 +150,7 @@ ABILITY:*LANGBONUS|TYPE:VIRTUAL|CATEGORY:*LANGBONUS|KEY:*LANGBONUS|APPLIEDTO:Syl
 USERPOOL:*LANGBONUS|POOLPOINTS:0.0
 ABILITY:Arcane Bond|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Arcane Bond ~ Bonded Object|TYPE:WizardClassFeatures.ArcaneBond.SpecialQuality|DESC:Objects that are the subject of an arcane bond must fall into one of the following categories&colon; amulet, ring, staff, wand, or weapon. These objects are always masterwork quality. Weapons acquired at 1st level are not made of any special material. If the object is an amulet or ring, it must be worn to have effect, while staves, wands, and weapons must be held in one hand. When attempting to cast a spell without your bonded object worn or in hand, you must make a concentration check or lose the spell (DC 20 + the spell's level). A ring or amulet occupies the ring or neck slot accordingly. A bonded object can be used once per day to cast any one spell that the wizard has in his spellbook and is capable of casting, even if the spell is not prepared. This spell is treated like any other spell cast by the wizard, including casting time, duration, and other effects dependent on the wizard's level. This spell cannot be modified by metamagic feats or other abilities. The bonded object cannot be used to cast spells from the wizard's opposition schools (see arcane school). A wizard can add additional magic abilities to his bonded object as if he has the required item creation feats and if he meets the level prerequisites of the feat. For example, a wizard with a bonded dagger must be at least 5th level to add magic abilities to the dagger (see the Craft Magic Arms and Armor feat in Feats). If the bonded object is a wand, it loses its wand abilities when its last charge is consumed, but it is not destroyed and it retains all of its bonded object properties and can be used to craft a new wand. The magic properties of a bonded object, including any magic abilities added to the object, only function for the wizard who owns it. If a bonded object's owner dies, or the item is replaced, the object reverts to being an ordinary masterwork item of the appropriate type. If a bonded object is damaged, it is restored to full hit points the next time the wizard prepares his spells. If the object of an arcane bond is lost or destroyed, it can be replaced after 1 week in a special ritual that costs 200 gp per wizard level plus the cost of the masterwork item. This ritual takes 8 hours to complete. Items replaced in this way do not possess any of the additional enchantments of the previous bonded item. A wizard can designate an existing magic item as his bonded item. This functions in the same way as replacing a lost or destroyed item except that the new magic item retains its abilities while gaining the benefits and drawbacks of becoming a bonded item.
 USERPOOL:Arcane Bond|POOLPOINTS:0.0
-ABILITY:Arcane Opposition School|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Illusion Opposition School|TYPE:WizardClassFeatures.SpecialQuality.ClassSpecialization.ArcaneOppositionSchool|DESC:You have chosen illusion spells as an opposition school. Preparing an illusion spell takes up two spell slots of the same level. You take a -4 penalty on any skill checks made when crafting a magic item that has an illusion spell as a prerequisite.
+ABILITY:Arcane Opposition School|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Enchantment Opposition School|TYPE:WizardClassFeatures.SpecialQuality.ClassSpecialization.ArcaneOppositionSchool|DESC:You have chosen enchantment spells as an opposition school. Preparing an enchantment spell takes up two spell slots of the same level. You take a -4 penalty on any skill checks made when crafting a magic item that has an enchantment spell as a prerequisite.
 ABILITY:Arcane Opposition School|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Necromancy Opposition School|TYPE:WizardClassFeatures.SpecialQuality.ClassSpecialization.ArcaneOppositionSchool|DESC:You have chosen necromancy spells as an opposition school. Preparing an necromancy spell takes up two spell slots of the same level. You take a -4 penalty on any skill checks made when crafting a magic item that has an necromancy spell as a prerequisite.
 USERPOOL:Arcane Opposition School|POOLPOINTS:0.0
 ABILITY:Elf Racial Subtype|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Racial Subtype ~ None|TYPE:Universal Subtype|DESC:You have chosen no racial subtype.
@@ -161,6 +162,8 @@ ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Wizard|TYPE:Favor
 USERPOOL:Favored Class|POOLPOINTS:0.0
 ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Hit Point|APPLIEDTO:,,|TYPE:FavoredClassBonus
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
+ABILITY:Region of Origin|TYPE:NORMAL|CATEGORY:Background|KEY:Kyonin|TYPE:Region|DESC:Kingdom of the Elves
+USERPOOL:Region of Origin|POOLPOINTS:0.0
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Focused Mind|TYPE:Trait.BasicTrait.MagicTrait|DESC:Your childhood was either dominated by lessons of some sort (be they musical or academic) or by a horrible home life that encouraged your ability to block out distractions to focus on the immediate task at hand. You gain a +2 trait bonus on concentration checks.
 ABILITY:Traits|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Trait ~ Rich Parents|TYPE:Trait.BasicTrait.SocialTrait|DESC:You were born into a rich family, perhaps even the nobility. Your starting cash increases to 900 gp.
 USERPOOL:Traits|POOLPOINTS:0.0
@@ -276,7 +279,7 @@ CALCEQUIPSET:0.1
 # EquipSet Temp Bonuses
 
 # Character Deity/Domain
-DEITY:Desna|DEITYDOMAINS:[DOMAIN:Chaos|DOMAIN:Good|DOMAIN:Liberation|DOMAIN:Luck|DOMAIN:Travel|DOMAIN:Azata Subdomain (Chaos)|DOMAIN:Azata Subdomain (Good)|DOMAIN:Curse Subdomain|DOMAIN:Exploration Subdomain|DOMAIN:Fate Subdomain|DOMAIN:Freedom Subdomain|DOMAIN:Revolution Subdomain]|ALIGNALLOW:|DESC:Goddess of dreams, stars, travelers, luck|DEITYFAVWEAP:[WEAPON:Starknife]|DEITYALIGN:CG
+DEITY:Yuelral|DEITYDOMAINS:[DOMAIN:Artifice|DOMAIN:Earth|DOMAIN:Good|DOMAIN:Knowledge|DOMAIN:Magic|DOMAIN:Arcane Subdomain|DOMAIN:Azata Subdomain (Chaos)|DOMAIN:Azata Subdomain (Good)|DOMAIN:Caves Subdomain|DOMAIN:Construct Subdomain|DOMAIN:Divine Subdomain|DOMAIN:Memory Subdomain]|ALIGNALLOW:|DESC:Goddess of crystals, jewelers, magic|DEITYFAVWEAP:[WEAPON:Dagger]|DEITYALIGN:NG
 
 # Character Spells Information
 SPELLBOOK:Spellbook|TYPE:3|AUTOADDKNOWN:Y
@@ -296,8 +299,6 @@ SPELLNAME:Continual Flame|TIMES:1|CLASS:Wizard|BOOK:Known Spells|SPELLLEVEL:2|SO
 SPELLNAME:Continual Flame|TIMES:1|CLASS:Wizard|BOOK:Spellbook|SPELLLEVEL:2|SPELLNUMPAGES:2|SOURCE:[TYPE:CLASS|NAME:Wizard]
 SPELLNAME:Dancing Lights|TIMES:1|CLASS:Wizard|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Wizard]
 SPELLNAME:Dancing Lights|TIMES:1|CLASS:Wizard|BOOK:Spellbook|SPELLLEVEL:0|SPELLNUMPAGES:1|SOURCE:[TYPE:CLASS|NAME:Wizard]
-SPELLNAME:Daze|TIMES:1|CLASS:Wizard|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Wizard]
-SPELLNAME:Daze|TIMES:1|CLASS:Wizard|BOOK:Spellbook|SPELLLEVEL:0|SPELLNUMPAGES:1|SOURCE:[TYPE:CLASS|NAME:Wizard]
 SPELLNAME:Detect Magic|TIMES:1|CLASS:Wizard|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Wizard]
 SPELLNAME:Detect Magic|TIMES:1|CLASS:Wizard|BOOK:Spellbook|SPELLLEVEL:0|SPELLNUMPAGES:1|SOURCE:[TYPE:CLASS|NAME:Wizard]
 SPELLNAME:Detect Poison|TIMES:1|CLASS:Wizard|BOOK:Known Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Wizard]
